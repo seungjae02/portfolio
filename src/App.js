@@ -1,12 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
 import Banner from './Banner';
-import Stars from './components/Stars';
+import ABungUs from './components/ABungUs';
+import Stars from './components/Stars'
+import { Stack } from '@mui/material';
+import Landing from './landing/Landing'
+
 
 
 function App() {
   return (
-    <div><Stars/></div>
+    <div className="App">
+      <Landing/>
+    </div>
   );
 }
 

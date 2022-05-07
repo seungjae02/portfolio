@@ -1,19 +1,30 @@
+import bung from '../images/bung.png'
 
-const starsConfig = {
+const ABungUsConfig = {
     "autoPlay": true,
     "background": {
       "color": {
-        "value": "#080e14"
+        "value": "#000000"
       },
-    //   "image": "url('http://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1237px-NASA_logo.svg.png')",
-    //   "position": "50% 50%",
-    //   "repeat": "no-repeat",
-    //   "size": "20%",
-    //   "opacity": 1
+      "image": "",
+      "position": "50% 50%",
+      "repeat": "no-repeat",
+      "size": "cover",
+      "opacity": 1
+    },
+    "backgroundMask": {
+      "composite": "destination-out",
+      "cover": {
+        "color": {
+          "value": "#fff"
+        },
+        "opacity": 1
+      },
+      "enable": false
     },
     "fullScreen": {
       "enable": true,
-      "zIndex": -1
+      "zIndex": 0
     },
     "detectRetina": true,
     "duration": 0,
@@ -23,7 +34,7 @@ const starsConfig = {
       "events": {
         "onClick": {
           "enable": true,
-          "mode": "repulse"
+          "mode": "push"
         },
         "onDiv": {
           "selectors": [],
@@ -32,8 +43,8 @@ const starsConfig = {
           "type": "circle"
         },
         "onHover": {
-          "enable": true,
-          "mode": "bubble",
+          "enable": false,
+          "mode": "repulse",
           "parallax": {
             "enable": false,
             "force": 2,
@@ -55,11 +66,11 @@ const starsConfig = {
           "distance": 200
         },
         "bubble": {
-          "distance": 250,
+          "distance": 400,
           "duration": 2,
           "mix": false,
-          "opacity": 0,
-          "size": 0,
+          "opacity": 0.8,
+          "size": 40,
           "divs": {
             "distance": 200,
             "duration": 0.4,
@@ -103,14 +114,19 @@ const starsConfig = {
         },
         "push": {
           "default": true,
-          "groups": [],
+          "groups": [
+            "z5000",
+            "z7500",
+            "z2500",
+            "z1000"
+          ],
           "quantity": 4
         },
         "remove": {
           "quantity": 2
         },
         "repulse": {
-          "distance": 400,
+          "distance": 200,
           "duration": 0.4,
           "factor": 100,
           "speed": 1,
@@ -187,13 +203,13 @@ const starsConfig = {
         }
       },
       "color": {
-        "value": "#ffffff",
+        "value": "#fff",
         "animation": {
           "h": {
             "count": 0,
             "enable": false,
             "offset": 0,
-            "speed": 1,
+            "speed": 20,
             "sync": true
           },
           "s": {
@@ -237,7 +253,40 @@ const starsConfig = {
         }
       },
       "gradient": [],
-      "groups": {},
+      "groups": {
+        "z5000": {
+          "number": {
+            "value": 70
+          },
+          "zIndex": {
+            "value": 50
+          }
+        },
+        "z7500": {
+          "number": {
+            "value": 30
+          },
+          "zIndex": {
+            "value": 75
+          }
+        },
+        "z2500": {
+          "number": {
+            "value": 50
+          },
+          "zIndex": {
+            "value": 25
+          }
+        },
+        "z1000": {
+          "number": {
+            "value": 40
+          },
+          "zIndex": {
+            "value": 10
+          }
+        }
+      },
       "life": {
         "count": 0,
         "delay": {
@@ -263,7 +312,7 @@ const starsConfig = {
           "value": "#ffffff"
         },
         "consent": false,
-        "distance": 150,
+        "distance": 100,
         "enable": false,
         "frequency": 1,
         "opacity": 0.4,
@@ -284,14 +333,14 @@ const starsConfig = {
       "move": {
         "angle": {
           "offset": 0,
-          "value": 90
+          "value": 10
         },
         "attract": {
           "distance": 200,
           "enable": false,
           "rotate": {
             "x": 600,
-            "y": 600
+            "y": 1200
           }
         },
         "center": {
@@ -301,7 +350,7 @@ const starsConfig = {
         },
         "decay": 0,
         "distance": {},
-        "direction": "none",
+        "direction": "right",
         "drift": 0,
         "enable": true,
         "gravity": {
@@ -329,9 +378,9 @@ const starsConfig = {
           "right": "out",
           "top": "out"
         },
-        "random": true,
+        "random": false,
         "size": false,
-        "speed": 1,
+        "speed": 5,
         "spin": {
           "acceleration": 0,
           "enable": false
@@ -349,30 +398,27 @@ const starsConfig = {
       },
       "number": {
         "density": {
-          "enable": true,
+          "enable": false,
           "area": 800,
           "factor": 1000
         },
         "limit": 0,
-        "value": 160
+        "value": 200
       },
       "opacity": {
         "random": {
-          "enable": true,
+          "enable": false,
           "minimumValue": 0.1
         },
-        "value": {
-          "min": 0,
-          "max": 1
-        },
+        "value": 1,
         "animation": {
           "count": 0,
-          "enable": true,
-          "speed": 1,
+          "enable": false,
+          "speed": 3,
           "sync": false,
           "destroy": "none",
           "startValue": "random",
-          "minimumValue": 0
+          "minimumValue": 0.1
         }
       },
       "orbit": {
@@ -450,21 +496,17 @@ const starsConfig = {
       },
       "size": {
         "random": {
-          "enable": true,
+          "enable": false,
           "minimumValue": 1
         },
-        "value": {
-          "min": 1,
-          "max": 3
-        },
+        "value": 3,
         "animation": {
           "count": 0,
           "enable": false,
-          "speed": 4,
+          "speed": 5,
           "sync": false,
           "destroy": "none",
-          "startValue": "random",
-          "minimumValue": 0.3
+          "startValue": "random"
         }
       },
       "stroke": {
@@ -506,8 +548,8 @@ const starsConfig = {
           "enable": false,
           "minimumValue": 0
         },
-        "value": 0,
-        "opacityRate": 1,
+        "value": 5,
+        "opacityRate": 0.5,
         "sizeRate": 1,
         "velocityRate": 1
       }
@@ -517,7 +559,66 @@ const starsConfig = {
     "responsive": [],
     "style": {},
     "themes": [],
-    "zLayers": 100
+    "zLayers": 100,
+    "emitters": {
+      "autoPlay": true,
+      "fill": true,
+      "life": {
+        "wait": false
+      },
+      "rate": {
+        "quantity": 1,
+        "delay": 7
+      },
+      "shape": "square",
+      "startCount": 0,
+      "size": {
+        "mode": "percent",
+        "height": 0,
+        "width": 0
+      },
+      "particles": {
+        "shape": {
+          "type": "images",
+          "options": {
+            "images": {
+              "src": bung,
+              "width": 1000,
+              "height": 1096
+            }
+          }
+        },
+        "size": {
+          "value": 180
+        },
+        "move": {
+          "speed": 10,
+          "outModes": {
+            "default": "none",
+            "right": "destroy"
+          },
+          "straight": true
+        },
+        "zIndex": {
+          "value": 0
+        },
+        "rotate": {
+          "value": {
+            "min": 0,
+            "max": 360
+          },
+          "animation": {
+            "enable": true,
+            "speed": 10,
+            "sync": true
+          }
+        }
+      },
+      "position": {
+        "x": -5,
+        "y": 55
+      }
+    }
   }
 
-  export default starsConfig;
+  export default ABungUsConfig;

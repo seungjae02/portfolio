@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import starsConfig from './StarsConfig'
+import ABungUsConfig from './ABungUsConfig'
 
-const Stars = () => {
+const ABungUs = () => {
     const particlesInit = async (main) => {
         console.log(main);
     
@@ -21,9 +21,9 @@ const Stars = () => {
           id="tsparticles"
           init={particlesInit}
           loaded={particlesLoaded}
-          options={starsConfig}
+          options={ABungUsConfig}
         />
       );
 }
 
-export default Stars
+export default ABungUs
