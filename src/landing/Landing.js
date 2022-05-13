@@ -1,7 +1,7 @@
 import './Landing.css'
 import React, { Component } from 'react';
 import ReactFloaterJs from 'react-floaterjs';
-import Bung from '../images/bung2.png'
+import SpaceBung from '../images/space_bung.png'
 
 import Stars from '../components/Stars'
 import NeonSign from '../components/NeonSign'
@@ -17,7 +17,7 @@ function Landing() {
                 <NeonSign className="neonSign"/>
                         
                 <ReactFloaterJs className="floatingBung">
-                    <img src={Bung}/>
+                    <img src={SpaceBung}/>
                 </ReactFloaterJs>
             </div>
         </div>
