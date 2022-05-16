@@ -1,6 +1,16 @@
-.neonSign {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.landing-message-container {
+  text-align: left;
+  width: 800px;
+  height: 500px;
 }
 
+.landing-message-style {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+}
 .floatingBung {
     z-index: 1;
 }
