@@ -20,7 +20,7 @@ function Landing() {
                         <h1>
                             Hi! <span class="wave">👋</span> 
                             <br/>
-                            My name is SeungJae and I am a
+                            My name is SeungJae and I'm a
                             <TypeAnimation
                                 cursor={true}
                                 sequence={[

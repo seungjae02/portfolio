@@ -13,6 +13,8 @@
 }
 
 .message-social-media-container {
+  width: auto;
+  height: auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -23,21 +25,18 @@
 }
 
 .responsive-floatingBung {
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
 .flexbox-container {
-  width: 100%;
+  width: 94%;
   height: auto;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   display: flex;
   flex-direction: row;
-}
-
-.test {
-  margin: 1em;
+  margin: 3%;
 }
 
 @media (max-width: 800px) {
@@ -60,8 +59,6 @@
 .social-media-links {
   width: 100%;
   height: auto;
-  justify-content: space-evenly;
-
 }
 
 .center {
@@ -76,15 +73,19 @@
 
 /* Social media link stuff */
 ul {
+  padding: 0; 
   display: flex;
   position: relative;
+  justify-content: space-evenly;
 }
 
 ul li {
+  padding: 0;
   list-style: none;
 }
 
 ul li a {
+  padding: 0;
   width: 80px;
   height: 80px;
   background-color: #fff;
@@ -96,8 +97,6 @@ ul li a {
   position: relative;
   overflow: hidden;
   border: 3px solid #fff;
-  margin-left: 0.25em;
-  margin-right: 0.25em;
   z-index: 1;
 }
 
