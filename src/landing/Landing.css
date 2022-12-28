@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+#landing {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.landing-page-container {
+  height: 100vh;
+}
+
 .landing-message-container {
   text-align: left;
   width: 100%;
@@ -15,7 +36,6 @@
 .message-social-media-container {
   width: auto;
   height: auto;
-  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -25,51 +45,19 @@
 }
 
 .responsive-floatingBung {
-  width: 90%;
+  margin-left: 20%;
+  width: 70%;
   height: auto;
 }
 
 .flexbox-container {
   width: 94%;
-  height: auto;
+  height: 90%;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: row;
-  margin: 3%;
 }
-
-@media (max-width: 800px) {
-  .flexbox-container {
-    flex-direction: column;
-  }
-
-  .landing-message-style {
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.8em;
-  }
-
-  .responsive-floatingBung {
-    width: 50%;
-    height: auto;
-  }
-}
-
-.social-media-links {
-  width: 100%;
-  height: auto;
-}
-
-.center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
 
 /* Social media link stuff */
 ul {
@@ -163,3 +151,60 @@ ul li:nth-child(4) a:before {
    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
   100% { transform: rotate( 0.0deg) }
 }
+
+.social-media-links {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .flexbox-container {
+    flex-direction: column;
+  }
+
+  .landing-message-style {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+  }
+
+  .responsive-floatingBung {
+    margin: 0;
+    width: 70%;
+    height: auto;
+  }
+
+  ul li a {
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 60px;
+    font-size: 26.25px;
+    display: block;
+    border-radius: 50%; 
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+    margin-left: 5px;
+    margin-right: 5px
+  }
+
+  .landing-page-container {
+    height: 100vh;
+  }
+
+  .floatingBung {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+

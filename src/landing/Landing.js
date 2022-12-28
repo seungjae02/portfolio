@@ -1,20 +1,15 @@
-import './Landing.css'
+import './Landing.css';
 import React, { Component } from 'react';
 import ReactFloaterJs from 'react-floaterjs';
 import SpaceBung from '../images/space_bung.png'
-
-import Stars from '../components/Stars'
-import NeonSign from '../components/NeonSign'
 import TypeAnimation from 'react-type-animation';
+import ScrollDown from '../components/ScrollDownArrow';
 
 
 function Landing() {
     return(  
-        <div>
-
-            <Stars/>
-                
-            <div className="flexbox-container center">
+        <section id="landing">
+            <div className="flexbox-container">
                 <div className="message-social-media-container">
                     <div className="landing-message-container landing-message-style">
                         <h1>
@@ -54,13 +49,12 @@ function Landing() {
                     </div>
                 </div>
 
-                
-                        
                 <ReactFloaterJs className="floatingBung">
                     <img src={SpaceBung} className="responsive-floatingBung"/>
                 </ReactFloaterJs>
             </div>
-        </div>
+            <ScrollDown section='prelude'/>
+        </section>
     );
 }
  
