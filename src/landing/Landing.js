@@ -1,59 +1,62 @@
+
 import './Landing.css';
-import React, { Component } from 'react';
+import React from 'react';
 import ReactFloaterJs from 'react-floaterjs';
 import SpaceBung from '../images/space_bung.png'
-import TypeAnimation from 'react-type-animation';
-import ScrollDown from '../components/ScrollDownArrow';
+import { Typewriter } from 'react-simple-typewriter'
+import ScrollDown from '../components/navigation/ScrollDownArrow';
+import {Row, Col, Container} from 'react-bootstrap';
 
 
 function Landing() {
     return(  
         <section id="landing">
-            <div className="flexbox-container">
-                <div className="message-social-media-container">
-                    <div className="landing-message-container landing-message-style">
-                        <h1>
-                            Hi! <span class="wave">👋</span> 
+            <Container fluid>
+                <Row className="responsive-margin justify-content-md-center align-items-center">
+                    <Col md={5}>
+                        <h1 className="mb-3 landing-message-style">
+                            Hi! <span className="wave">👋</span> 
                             <br/>
-                            My name is SeungJae and I'm a
-                            <TypeAnimation
-                                cursor={true}
-                                sequence={[
-                                'Aspiring Software Engineer',
-                                3000,
-                                'Computer Engineering Student',
-                                3000,
-                                ]}
-                                repeat={Infinity}
-                            />
+                            I am Jay and I am a:
+                            <div className="whoisbung">
+                                <Typewriter
+                                    words={['Problem Solver', 'Team Worker', 'Self Learner']}
+                                    loop={false}
+                                    cursor
+                                    cursorStyle='|'
+                                    typeSpeed={70}
+                                    deleteSpeed={50}
+                                    delaySpeed={1000}
+                                />
+                            </div>
                         </h1>
-                    </div>
-                    
-                    <div className="social-media-links">                             
-                        <ul>
-                            <li>
-                                <a href="https://www.linkedin.com/in/sj-yang/">
-                                <i class="fab fa-linkedin-in icon"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/seungjae02">
-                                <i class="fab fa-github icon"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/jay.yang.752861">
-                                <i class="fab fa-facebook-f icon"></i></a></li>
-                            <li>
-                                <a href="mailto:seungjae.yang@mail.utoronto.ca">
-                                <i class="fa fa-envelope icon"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+                        <Row>                 
+                            <ul>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/sj-yang/">
+                                    <i className="fab fa-linkedin-in icon"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/seungjae02">
+                                    <i className="fab fa-github icon"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/jay.yang.752861">
+                                    <i className="fab fa-facebook-f icon"></i></a></li>
+                                <li>
+                                    <a href="mailto:seungjae.yang@mail.utoronto.ca">
+                                    <i className="fa fa-envelope icon"></i></a></li>
+                            </ul>
+                        </Row>         
+                    </Col>
 
-                <ReactFloaterJs className="floatingBung">
-                    <img src={SpaceBung} className="responsive-floatingBung"/>
-                </ReactFloaterJs>
-            </div>
-            <ScrollDown section='prelude'/>
+                    <Col md={5} className="justify-content-center align-items-center">
+                        <ReactFloaterJs>
+                            <img src={SpaceBung} className="responsive-floatingBung"/>
+                        </ReactFloaterJs>
+                    </Col>
+                </Row>
+            </Container>
         </section>
     );
 }

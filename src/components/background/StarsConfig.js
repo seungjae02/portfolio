@@ -351,10 +351,10 @@ const starsConfig = {
         "density": {
           "enable": true,
           "area": 800,
-          "factor": 1000
+          "factor": 2000
         },
         "limit": 0,
-        "value": 160
+        "value": 80
       },
       "opacity": {
         "random": {

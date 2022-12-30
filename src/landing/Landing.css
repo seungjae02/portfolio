@@ -2,143 +2,106 @@
 
 #landing {
   height: 100vh;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.landing-page-container {
-  height: 100vh;
-}
-
-.landing-message-container {
-  text-align: left;
-  width: 100%;
-  height: auto;
+  width: auto;
 }
 
 .landing-message-style {
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.2em;
+  color: #ffffff !important;
+  font-family: 'Pathway Gothic One', sans-serif !important;
+  font-size: auto !important;
+  text-align: left !important;
 }
 
-.message-social-media-container {
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.floatingBung {
-  z-index: 1;
+.whoisbung {
+  color: #feda4a;
+  font-weight: 800;
 }
 
 .responsive-floatingBung {
-  margin-left: 20%;
-  width: 70%;
-  height: auto;
-}
-
-.flexbox-container {
-  width: 94%;
-  height: 90%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
+  height: 95vh !important;
+  width: auto !important;
 }
 
 /* Social media link stuff */
 ul {
-  padding: 0; 
-  display: flex;
-  position: relative;
-  justify-content: space-evenly;
+  padding: 0 !important;
+  display: flex !important;
+  position: relative !important;
+  justify-content: space-between !important;
 }
 
 ul li {
-  padding: 0;
-  list-style: none;
+  padding: 0 !important;
+  list-style: none !important;
 }
 
 ul li a {
-  padding: 0;
-  width: 80px;
-  height: 80px;
-  background-color: #fff;
-  text-align: center;
-  line-height: 80px;
-  font-size: 35px;
-  display: block;
-  border-radius: 50%; 
-  position: relative;
-  overflow: hidden;
-  border: 3px solid #fff;
-  z-index: 1;
+  padding: 0 !important;
+  width: 80px !important;
+  height: 80px !important;
+  background-color: #fff !important;
+  text-align: center !important;
+  line-height: 80px !important;
+  font-size: 35px !important;
+  display: block !important;
+  border-radius: 50% !important; 
+  position: relative !important;
+  overflow: hidden !important;
+  border: 3px solid #fff !important;
+  z-index: 1 !important;
 }
 
 ul li a .icon {
-  position: relative;
-  color: #262626;
-  transition: .5s;
-  z-index: 3;
+  position: relative !important;
+  color: #262626 !important;
+  transition: .5s !important;
+  z-index: 3 !important;
 }
 
 ul li a:hover .icon {
-  color: #fff;
-  transform: rotateY(360deg);
+  color: #fff !important;
+  transform: rotateY(360deg) !important;
 }
 
 ul li a:before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #f00;
-  transition: .5s;
-  z-index: 2;
+  content: "" !important;
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: #f00 !important;
+  transition: .5s !important;
+  z-index: 2 !important;
 }
 
 ul li a:hover:before {
-  top: 0;
+  top: 0 !important;
 }
 
 ul li:nth-child(1) a:before{
-  background: #0077b5;
+  background: #0077b5 !important;
 }
 
 ul li:nth-child(2) a:before{
-  background: #171515;
+  background: #171515 !important;
 }
 
 ul li:nth-child(3) a:before {
-  background: #3b5999;
+  background: #3b5999 !important;
 }
 
 ul li:nth-child(4) a:before {
-  background: #dd4b39;
+  background: #dd4b39 !important;
 }
 
 /* Waving hand emoji stuff */
 .wave {
-  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s;        /* Change to speed up or slow down */
-  animation-iteration-count: infinite;  /* Never stop waving :) */
-  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
-  display: inline-block;
+  animation-name: wave-animation !important;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s !important;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite !important;  /* Never stop waving :) */
+  transform-origin: 70% 70% !important;       /* Pivot around the bottom-left palm */
+  display: inline-block !important;
 }
 
 @keyframes wave-animation {
@@ -152,57 +115,40 @@ ul li:nth-child(4) a:before {
   100% { transform: rotate( 0.0deg) }
 }
 
-.social-media-links {
-  width: 100%;
-  height: auto;
-}
-
 @media (max-width: 800px) {
-  .flexbox-container {
-    flex-direction: column;
-  }
-
   .landing-message-style {
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.8em;
+    color: #ffffff !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: auto !important;
   }
 
   .responsive-floatingBung {
-    margin: 0;
-    width: 70%;
-    height: auto;
+    height: auto !important;
+    width: 100% !important;
   }
 
   ul li a {
-    padding: 0;
-    width: 60px;
-    height: 60px;
-    background-color: #fff;
-    text-align: center;
-    line-height: 60px;
-    font-size: 26.25px;
-    display: block;
-    border-radius: 50%; 
-    position: relative;
-    overflow: hidden;
-    border: 3px solid #fff;
-    z-index: 1;
-    margin-left: 5px;
-    margin-right: 5px
+    padding: 0 !important;
+    width: 60px !important;
+    height: 60px !important;
+    background-color: #fff !important;
+    text-align: center !important;
+    line-height: 60px !important;
+    font-size: 26.25px !important;
+    display: block !important;
+    border-radius: 50% !important; 
+    position: relative !important;
+    overflow: hidden !important;
+    border: 3px solid #fff !important;
+    z-index: 1 !important;
   }
 
   .landing-page-container {
-    height: 100vh;
+    height: 100vh !important;
   }
 
-  .floatingBung {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+  .responsive-margin {
+    padding: 3em;
   }
 }
 
