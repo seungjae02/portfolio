@@ -14,7 +14,6 @@ function Experience() {
                 + "/experience?api_key=" + process.env.REACT_APP_AIRTABLE_API_KEY)
         .then((res) => res.json())
         .then((data) => {
-            console.log(data.records)
             setExperience(data.records.map(exp => ({
                 company: exp.fields.company,
                 logo: exp.fields.logo[0].url,

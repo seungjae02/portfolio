@@ -303,7 +303,7 @@ const starsConfig = {
         "distance": {},
         "direction": "none",
         "drift": 0,
-        "enable": false,
+        "enable": true,
         "gravity": {
           "acceleration": 9.81,
           "enable": false,

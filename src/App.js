@@ -5,6 +5,7 @@ import About from './about/About';
 import Experience from './experience/Experience';
 import Stars from './components/background/Stars';
 import Projects from './projects/Projects';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About/> 
       <Experience/>
       <Projects/>
+      <Footer/>
     </div>
   );
 }
