@@ -1,0 +1,44 @@
+.planet-container {}
+
+.ring1 {
+    width: 100% !important;
+    height: 100% !important;
+    border-style: solid !important;
+    border-color: red !important;
+    border-width: 50px !important;
+    border-radius: 50%  !important;
+    transform: rotate3d(1, 0, 0, 75deg); 
+    position: absolute;
+    left:0;
+    top:0; 
+}
+
+.ring2 {
+    width: 30%;
+    height: 100%;
+    border-style: solid !important;
+    border-color: red !important;
+    border-width: 50px !important;
+    border-radius: 50%  !important;
+    transform: rotate3d(0, 0, 0, 0deg); 
+    position: absolute;
+    left:0;
+    top:0; 
+    z-index: 2;
+}
+
+.experience-img {
+    border-radius: 50% !important;
+    height: 100% !important;
+    width: 100% !important;
+    margin: 2em !important;
+    position: relative !important;
+    z-index: 1 !important;
+    max-width: 225px;
+}
+
+@media (max-width: 800px) {
+    .experience-img {
+        max-width: 40vw;
+    }
+}

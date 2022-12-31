@@ -22,7 +22,7 @@ const starsConfig = {
       "detectsOn": "window",
       "events": {
         "onClick": {
-          "enable": true,
+          "enable": false,
           "mode": "repulse"
         },
         "onDiv": {

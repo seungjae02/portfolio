@@ -1,3 +1,8 @@
 #experience {
-    height: 100vh !important;
+    height: auto !important;
+    max-width: 100vw !important;
+}
+
+.hide-overflow {
+    overflow-x: hidden !important;
 }

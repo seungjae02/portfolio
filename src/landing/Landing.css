@@ -23,19 +23,19 @@
 }
 
 /* Social media link stuff */
-ul {
+#landing ul {
   padding: 0 !important;
   display: flex !important;
   position: relative !important;
   justify-content: space-between !important;
 }
 
-ul li {
+#landing ul li {
   padding: 0 !important;
   list-style: none !important;
 }
 
-ul li a {
+#landing ul li a {
   padding: 0 !important;
   width: 80px !important;
   height: 80px !important;
@@ -51,19 +51,19 @@ ul li a {
   z-index: 1 !important;
 }
 
-ul li a .icon {
+#landing ul li a .icon {
   position: relative !important;
   color: #262626 !important;
   transition: .5s !important;
   z-index: 3 !important;
 }
 
-ul li a:hover .icon {
+#landing ul li a:hover .icon {
   color: #fff !important;
   transform: rotateY(360deg) !important;
 }
 
-ul li a:before {
+#landing ul li a:before {
   content: "" !important;
   position: absolute !important;
   top: 100% !important;
@@ -75,23 +75,23 @@ ul li a:before {
   z-index: 2 !important;
 }
 
-ul li a:hover:before {
+#landing ul li a:hover:before {
   top: 0 !important;
 }
 
-ul li:nth-child(1) a:before{
+#landing ul li:nth-child(1) a:before{
   background: #0077b5 !important;
 }
 
-ul li:nth-child(2) a:before{
+#landing ul li:nth-child(2) a:before{
   background: #171515 !important;
 }
 
-ul li:nth-child(3) a:before {
+#landing ul li:nth-child(3) a:before {
   background: #3b5999 !important;
 }
 
-ul li:nth-child(4) a:before {
+#landing ul li:nth-child(4) a:before {
   background: #dd4b39 !important;
 }
 
@@ -127,7 +127,7 @@ ul li:nth-child(4) a:before {
     width: 100% !important;
   }
 
-  ul li a {
+  #landing ul li a {
     padding: 0 !important;
     width: 60px !important;
     height: 60px !important;
