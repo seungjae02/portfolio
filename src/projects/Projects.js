@@ -36,8 +36,8 @@ function Projects() {
         <Container fluid className="project-section">
           <Container>
           <     Row data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000">
-                    <h1 className="experience-header">My <span className="experience">Personal Projects</span></h1>
-                    <h4 className="experience-header">Here are a few projects I've worked on.</h4>
+                    <h1 className="project-header">My <span className="experience">Personal Projects</span></h1>
+                    <h4 className="project-subheader">Here are a few projects I've worked on.</h4>
                 </Row>
                 <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
                     {projects.map(proj => {

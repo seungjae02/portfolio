@@ -5,8 +5,14 @@
     background-image: var(--section-background-color) !important;
 }
 
-.project-heading {
+.project-header {
     color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+.project-subheader {
+    color: #FFFFFFCF;
     text-align: center;
     font-weight: 300;
 }
