@@ -30,14 +30,18 @@ function About() {
                             <div className="about-message-container">
                                 <div className="crawl-container">
                                     <div className="crawl">
-                                        <div className="sw-title">
-                                            <p>Seung Jae Yang</p>
-                                            <h1>Aspiring Software Engineer</h1>
-                                        </div>
-                                        <p>Currently a junior (year 3) Computer Engineering student at the University of Toronto.</p>
-                                        <p>Loves programming and designing and implementing intricate solutions to real-life problems.</p>
-                                        <p>Has a career goal to create pragmatic solutions that empower users and make a lasting impact.</p>
-                                        <p>Enjoys playing and making music as hobby. Recently picked up keyboard building as hobby.</p>
+                                        <h1 className="sw-title">About Me:</h1>
+                                        <p>Hi! My name is Jay and I enjoy creating things by programming, circuit-ing, etc!</p>
+                                        <p>My interest in engineering started back in 2013 when I decided to build fully-functional candy machines out of Lego.
+                                            In 2020, transitioned to a virtual way of building — computer programming! </p>
+                                        <p>Today, I've had the priveledge to work at a <a href="https://about.google/">big tech company</a>, 
+                                            a <a href="https://www.bankofcanada.ca/">big bank</a>,
+                                            a <a href="https://yourenext.ca/">student-led career organization</a>, 
+                                            an <a href="https://outreach.engineering.utoronto.ca/">engineering program</a> as a mentor,
+                                             and a <a href="https://fibos.ca/">start-up</a>.</p>
+                                        <p>I study <a href="https://www.ece.utoronto.ca/">Electrical & Computer Engineering at the University of Toronto</a>, 
+                                            learning tools to help me implement intricate solutions to real-life problems.</p>
+                                        <p>My career goal is to create pragmatic solutions that empower users and make a lasting impact.</p>
                                     </div>
                                 </div>
                             </div>    
