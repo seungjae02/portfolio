@@ -1,6 +1,6 @@
 
 import './Landing.css';
-import React from 'react';
+import React, {useState,useEffect} from 'react';
 import ReactFloaterJs from 'react-floaterjs';
 import SpaceBung from '../images/space_bung.png'
 import { Typewriter } from 'react-simple-typewriter'
@@ -9,7 +9,21 @@ import {Row, Col, Container} from 'react-bootstrap';
 
 
 function Landing() {
-    return(  
+    const [resume, setResume] = useState("");
+
+    useEffect(() => {
+        fetch("https://api.airtable.com/v0/" + process.env.REACT_APP_AIRTABLE_BASE_ID
+                + "/resume?api_key=" + process.env.REACT_APP_AIRTABLE_API_KEY)
+        .then((res) => res.json())
+        .then((data) => {
+            setResume(data.records[0].fields.resume[0].url);
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+    }, []);
+
+    return(
         <section id="landing">
             <Container fluid>
                 <Row className="responsive-margin justify-content-md-center align-items-center">
@@ -41,11 +55,11 @@ function Landing() {
                                     <i className="fab fa-github icon"></i></a>
                                 </li>
                                 <li>
-                                    <a href="https://www.facebook.com/jay.yang.752861">
-                                    <i className="fab fa-facebook-f icon"></i></a></li>
-                                <li>
                                     <a href="mailto:seungjae.yang@mail.utoronto.ca">
                                     <i className="fa fa-envelope icon"></i></a></li>
+                                <li>
+                                    <a href={resume}>
+                                    <i className="fa fa-file icon"></i></a></li>
                             </ul>
                         </Row>         
                     </Col>

@@ -26,3 +26,33 @@
     overflow: hidden !important;
     box-shadow: 0 4px 4px 5px #ffffff !important;
 }
+.card-img-top {
+    padding: 20px !important;
+    opacity: 0.8 !important;
+    border-radius: 10px !important;
+}
+
+.btn-github {
+    color: #fff !important;
+    background-color: #6e5494 !important;
+    border-color: white !important;
+}
+.btn-github:hover {
+    color: #fff !important;
+    background-color: #6d20c5d7 !important;
+    border-color: #6d20c5d7 !important;
+}
+.btn-demo {
+    color: #fff !important;
+    background-color: #5181A7 !important;
+    border-color: white !important;
+}
+.btn-demo:hover {
+    color: #fff !important;
+    background-color: #4078FF !important;
+    border-color: #4078FF !important;
+}
+.btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}

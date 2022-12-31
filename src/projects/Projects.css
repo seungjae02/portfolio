@@ -5,38 +5,8 @@
     background-image: var(--section-background-color) !important;
 }
 
-.project-card {
-    padding-top: 50px !important;
-    padding-bottom: 50px !important;
-    padding-left: 25px !important;
-    padding-right: 25px !important;
-    height: auto !important;
-}
-
-.card-img-top {
-    padding: 20px !important;
-    opacity: 0.8 !important;
-    border-radius: 10px !important;
-}
-
-.btn-primary {
-    color: #fff !important;
-    background-color: #623686 !important;
-    border-color: #623686 !important;
-}
-
-.btn-primary:hover {
-    color: #fff !important;
-    background-color: #6d20c5d7 !important;
-    border-color: #6d20c5d7 !important;
-}
-.btn:focus {
-    outline: none !important;
-    box-shadow: none !important;
-}
 .project-heading {
-    color: white !important;
-    font-size: 2.3em !important;
-    font-weight: 500 !important;
-    padding-top: 10px !important;
+    color: white;
+    text-align: center;
+    font-weight: 300;
 }

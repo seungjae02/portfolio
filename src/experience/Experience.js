@@ -49,7 +49,7 @@ function Experience() {
     return (
         <section id="experience">
             <Col>
-                <Row style={{marginBottom: "3em"}} data-aos="zoom-in" data-aos-delay="50" data-aos-duration="3000">
+                <Row style={{marginBottom: "3em"}} data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000">
                     <h1 className="experience-header">My <span className="experience">Experience</span></h1>
                     <h4 className="experience-header">Here are some stuff I did on a job/club</h4>
                 </Row>
