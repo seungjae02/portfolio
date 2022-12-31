@@ -6,3 +6,13 @@
 .hide-overflow {
     overflow-x: hidden !important;
 }
+
+.experience-header {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+.experience {
+    font-weight: 600;
+}

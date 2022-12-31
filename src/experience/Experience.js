@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Card,Container, Row, Col } from "react-bootstrap";
 import ExperienceCard from "../components/experience/ExperienceCard";
-import TestImg from "./chance.jpeg";
-import NeonSign from "../components/neonsign/NeonSign";
 import AOS from 'aos';
 import './Experience.css'
 
@@ -51,8 +49,9 @@ function Experience() {
     return (
         <section id="experience">
             <Col>
-                <Row>
-                    <NeonSign message="My Work Experience"/>
+                <Row style={{marginBottom: "3em"}} data-aos="zoom-in" data-aos-delay="50" data-aos-duration="3000">
+                    <h1 className="experience-header">My <span className="experience">Experience</span></h1>
+                    <h4 className="experience-header">Here are some stuff I did on a job/club</h4>
                 </Row>
                 <Row className="hide-overflow">
                     {listOfExperience}
