@@ -1,0 +1,30 @@
+#getintouch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.getintouch-header {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+.getintouch-body {
+    color: #FFFFFFCF;
+    text-align: center;
+    font-weight: 300;
+}
+
+.getintouch-container {
+    max-width: 1000px;
+}
+
+.getintouch-body > a {
+    color: #feda4aca; 
+}
+
+.getintouch-body > a:hover {
+    color: #0ED8E0; 
+}

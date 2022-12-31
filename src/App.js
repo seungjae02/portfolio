@@ -1,10 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import Stars from './components/background/Stars';
 import Landing from './landing/Landing';
 import About from './about/About';
-import Experience from './experience/Experience';
-import Stars from './components/background/Stars';
 import Projects from './projects/Projects';
+import Experience from './experience/Experience';
+import GetInTouch from './getintouch/GetInTouch'
+
 import Footer from './components/footer/Footer';
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
       <About/> 
       <Experience/>
       <Projects/>
+      <GetInTouch/>
       <Footer/>
     </div>
   );

@@ -53,7 +53,6 @@ const FooterIcons = () => {
 const FooterText = () => {
     return (
         <div class="footer-text">
-            <p>Email me at: <strong>seungjae.yang@mail.utoronto.ca</strong></p>
             <p>Developed by Seung Jae Yang</p>
             <p>&copy; 2022 Seung Jae Yang</p>
         </div>
