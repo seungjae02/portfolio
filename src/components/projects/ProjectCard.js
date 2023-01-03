@@ -1,9 +1,10 @@
 import React from "react";
-import {Row} from "react-bootstrap"
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import TechChips from "../techchips/TechChips";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+
 import "./ProjectCard.css";
 
 function ProjectCard(props) {
@@ -12,6 +13,7 @@ function ProjectCard(props) {
             <Card.Img variant="top" src={props.imgPath}/>
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
+                <TechChips techs={props.techs}/>
                 <Card.Text style={{ textAlign: "justify" }}>
                 {props.description}
                 </Card.Text>

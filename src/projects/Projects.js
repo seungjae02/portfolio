@@ -31,6 +31,7 @@ function Projects() {
         });
     }, []);
 
+    projects.sort((a, b) => (a.order > b.order) ? 1: -1);
 
     return (
         <Container fluid className="project-section">
@@ -50,6 +51,7 @@ function Projects() {
                                     description={proj.description}
                                     ghLink={proj.github}
                                     demoLink={proj.demo}
+                                    techs={proj.techs}
                                     />
                                 </Col>
                         )
