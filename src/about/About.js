@@ -26,7 +26,7 @@ function About() {
 
             <Container>
                 <section id="about">
-                    <div className="star-wars about-section-container" data-aos="fade-up" data-aos-delay="300" data-aos-duration="3000">
+                    <div className="star-wars about-section-container" data-aos="fade-in" data-aos-delay="300" data-aos-duration="3000">
                             <div className="about-message-container">
                                 <div className="crawl-container">
                                     <div className="crawl">

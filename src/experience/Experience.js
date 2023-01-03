@@ -36,7 +36,7 @@ function Experience() {
     experience.sort((a, b) => (a.order > b.order) ? 1: -1);
     const listOfExperience = experience.map((exp) => {
         return (
-                <div data-aos={"slide-" + ((exp.order%2 === 0) ? "left" : "right")} 
+                <div data-aos={"fade-in"} 
                     data-aos-easing="exponential"
                     data-aos-duration="1000">
                     <ExperienceCard company={exp.company} img={exp.logo} position={exp.position} location={exp.location}
