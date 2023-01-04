@@ -33,7 +33,7 @@ function About() {
                                         <h1 className="sw-title">About Me:</h1>
                                         <p>Hi! My name is Jay and I enjoy creating things by programming, circuit-ing, etc!</p>
                                         <p>My interest in engineering started back in 2013 when I decided to build fully-functional candy machines out of Lego.
-                                            In 2020, transitioned to a virtual way of building — computer programming! </p>
+                                            In 2020, I transitioned to a virtual way of building — computer programming! </p>
                                         <p>Today, I've had the priveledge to work at a <a href="https://about.google/">big tech company</a>, 
                                             a <a href="https://www.bankofcanada.ca/">big bank</a>,
                                             a <a href="https://yourenext.ca/">student-led career organization</a>, 
