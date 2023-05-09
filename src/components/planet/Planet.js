@@ -6,11 +6,7 @@ import './Planet.css';
 function Planet({img}) {
     return (
         <div className="planet-container">
-            <ReactFloaterJs>
-                <img src={img} className="experience-img"/>
-                {/* <div className="ring1"/>
-                <div className="ring2"/> */}
-            </ReactFloaterJs>
+            <img src={img} className="experience-img"/>
         </div>
     );
 }

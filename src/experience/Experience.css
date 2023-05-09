@@ -1,6 +1,8 @@
 #experience {
     height: auto !important;
-    max-width: 100vw !important;
+    max-width: 80% !important;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .hide-overflow {
